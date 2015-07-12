@@ -144,13 +144,6 @@
 .string {
     color: @zooce-very-light-alt-blue;
 
-    &.include {
-        color: @zooce-yellow;
-        &.lt-gt {
-            color: @zooce-very-dark-green;
-        }
-    }
-
     &.regexp {
         color: @zooce-very-dark-green;
 
@@ -269,11 +262,11 @@
 .markup {
     &.bold {
         color: @zooce-red;
-        font-style: bold;
+        font-weight: bold;
     }
 
     &.changed {
-        color: @zooce-light-blue;
+        color: @zooce-very-light-yellow;
     }
 
     &.deleted {
@@ -290,7 +283,7 @@
     }
 
     &.inserted {
-        color: @zooce-yellow;
+        color: @zooce-green;
     }
 
     &.list {
