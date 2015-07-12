@@ -40,7 +40,7 @@
     .gutter .line-number.folded,
     .gutter .line-number:after,
     .fold-marker:after {
-        color: @light-gray;
+        color: @zooce-light-gray;
     }
 
     .invisible {
@@ -67,12 +67,12 @@
 }
 
 .comment {
-    color: @light-gray;
+    color: @zooce-very-light-gray;
 }
 
 .entity {
     &.name.type {
-        color: @light-orange;
+        color: @zooce-very-dark-green;
     }
 
     &.other.inherited-class {
@@ -137,7 +137,7 @@
 }
 
 .invalid.illegal {
-    background-color: @red;
+    background-color: @zooce-red;
     color: @syntax-background-color;
 }
 
@@ -160,14 +160,14 @@
     }
 
     &.other.link {
-        color: @red;
+        color: @zooce-red;
     }
 }
 
 .punctuation {
     &.definition {
         &.comment {
-            color: @light-gray;
+            color: @zooce-very-light-gray;
         }
 
         &.string,
@@ -183,7 +183,7 @@
         }
 
         &.bold {
-            color: @light-orange;
+            color: @zooce-yellow;
             font-style: bold;
         }
 
@@ -194,14 +194,14 @@
     }
 
     &.section.embedded {
-        color: darken(@red, 10%);
+        color: darken(@zooce-red, 10%);
     }
 
 }
 
 .support {
     &.class {
-        color: @light-orange;
+        color: @zooce-yellow;
     }
 
     &.function  {
@@ -231,7 +231,7 @@
     }
 
     &.other.attribute-name {
-        color: @zooce-red;
+        color: @zooce-yellow;
 
         &.id {
             color: @zooce-yellow;
@@ -241,7 +241,7 @@
 
 .meta {
     &.class {
-        color: @light-orange;
+        color: @zooce-yellow;
     }
 
     &.link {
@@ -257,7 +257,7 @@
     }
 
     &.separator {
-        background-color: @gray;
+        background-color: @zooce-very-light-gray;
         color: @syntax-text-color;
     }
 }
@@ -277,11 +277,11 @@
     }
 
     &.deleted {
-        color: @red;
+        color: @zooce-red;
     }
 
     &.italic {
-        color: @purple;
+        color: @zooce-purple;
         font-style: italic;
     }
 
@@ -298,7 +298,7 @@
     }
 
     &.quote {
-        color: @red;
+        color: @zooce-red;
     }
 
     &.raw.inline {

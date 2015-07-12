@@ -5,27 +5,27 @@
 
 // General colors
 @syntax-text-color: @zooce-white;
-@syntax-cursor-color: @zooce-light-blue;
-@syntax-selection-color: @selection;
+@syntax-cursor-color: @zooce-yellow;
+@syntax-selection-color: @zooce-alt-blue;
 @syntax-background-color: @zooce-dark-gray;
 
 // Guide colors
-@syntax-wrap-guide-color: @gray;
-@syntax-indent-guide-color: darken(@gray, 5%);
-@syntax-invisible-character-color: darken(@gray, 5%);
+@syntax-wrap-guide-color: @zooce-light-gray;
+@syntax-indent-guide-color: darken(@zooce-gray, 5%);
+@syntax-invisible-character-color: darken(@zooce-gray, 5%);
 
 // For find and replace markers
-@syntax-result-marker-color: @light-gray;
+@syntax-result-marker-color: @zooce-light-gray;
 @syntax-result-marker-color-selected: white;
 
 // Gutter colors
-@syntax-gutter-text-color: @light-gray;
-@syntax-gutter-text-color-selected: @zooce-light-blue;
+@syntax-gutter-text-color: @zooce-light-gray;
+@syntax-gutter-text-color-selected: @syntax-cursor-color;
 @syntax-gutter-background-color: darken(@zooce-dark-gray, 5%);
 @syntax-gutter-background-color-selected: lighten(@zooce-dark-gray, 7%);
 
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
-@syntax-color-added: @yellow;
-@syntax-color-modified: @orange;
-@syntax-color-removed: @red;
+@syntax-color-renamed: @zooce-blue;
+@syntax-color-added: @zooce-green;
+@syntax-color-modified: @zooce-light-alt-blue;
+@syntax-color-removed: @zooce-red;
