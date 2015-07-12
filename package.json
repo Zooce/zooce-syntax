@@ -1,17 +1,17 @@
 {
-    "name": "zooce-syntax",
-    "theme": "syntax",
-    "version": "0.0.0",
-    "description": "A simple syntax theme with nice contrast for easy viewing!",
-    "keywords": [
-        "zooce",
-        "contrast",
-        "syntax",
-        "theme"
-    ],
-    "repository": "https://github.com/Zooce/zooce-syntax",
-    "license": "MIT",
-    "engines": {
-        "atom": ">=1.0.0 <2.0.0"
-    }
+  "name": "zooce-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A simple syntax theme with nice contrast for easy viewing!",
+  "keywords": [
+    "zooce",
+    "contrast",
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/Zooce/zooce-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
 }
