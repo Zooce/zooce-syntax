@@ -6,5 +6,4 @@ A simple, dark syntax theme with nice contrast for easy viewing!
 
 # TODO
 - Test on Windows / Non-Retina
-- Increase line number brightness a smidge
 - Configure custom colors for major languages (currently focused on C/C++)
