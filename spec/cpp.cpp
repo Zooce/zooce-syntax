@@ -43,7 +43,7 @@ namespace Zooce {
         PersonalInfo * m_info;
         EmployeeType m_eType;
         unsigned int m_id;
-    }
+    };
 
     Employee::Employee(unsigned int a_id, PersonalInfo a_pInfo, EmployeeType a_type) {
         m_id = Employee::s_idNums++;
