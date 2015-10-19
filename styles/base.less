@@ -66,6 +66,10 @@
     border: 2px solid @syntax-result-marker-color-selected;
 }
 
+.body {
+    color: @syntax-text-color;
+}
+
 .comment {
     color: @zooce-very-light-gray;
 }
@@ -85,18 +89,13 @@
 
     &.control {
         color: @zooce-light-blue;
+        &.ternary {
+            color: @syntax-text-color;
+        }
     }
 
     &.operator {
-        color: lighten(@zooce-red, 10%);
-    }
-
-    &.other.special-method {
-        color: @zooce-yellow;
-    }
-
-    &.other.unit {
-        color: @zooce-red;
+        color: @syntax-text-color;
     }
 }
 
@@ -125,14 +124,14 @@
 }
 
 .variable {
-    color: lighten(@zooce-red, 5%);
+    color : @syntax-text-color;
+
+    &.other {
+        color: lighten(@zooce-red, 5%);
+    }
 
     &.interpolation {
         color: darken(@zooce-red, 10%);
-    }
-
-    &.parameter.function {
-        color: @syntax-text-color;
     }
 }
 
@@ -146,10 +145,6 @@
 
     &.regexp {
         color: @zooce-very-dark-green;
-
-        .source.ruby.embedded {
-            color: @zooce-red;
-        }
     }
 
     &.other.link {
@@ -186,10 +181,23 @@
         }
     }
 
-    &.section.embedded {
-        color: darken(@zooce-red, 10%);
+    &.section {
+        &.class.begin, &.class.end {
+            color: @syntax-text-color;
+        }
+
+        &.block {
+            color: @syntax-text-color;
+        }
+
+        &.embedded {
+            color: darken(@zooce-red, 10%);
+        }
     }
 
+    &.terminator {
+        color: @syntax-text-color;
+    }
 }
 
 .support {
@@ -212,7 +220,7 @@
     }
 
     &.name.class, &.name.type.class {
-        color: @zooce-red;
+        color: @zooce-yellow;
     }
 
     &.name.section {
@@ -233,8 +241,14 @@
 }
 
 .meta {
+    color: @syntax-text-color;
+
     &.class {
         color: @zooce-yellow;
+    }
+
+    &.definition.class.inherited.classes {
+        color: @syntax-text-color;
     }
 
     &.link {

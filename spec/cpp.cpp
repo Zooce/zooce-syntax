@@ -8,60 +8,63 @@
 
 #define COMPARE(x,y) (((x) > (y)) ? 1 : ((x) == (y)) ? 0 : -1)
 
-typedef struct PersonalInfo {
-    int age;
-    std::string name;
-} PersonalInfo;
-
-enum class EmployeeType {
-    HOURLY, SALARY, TEMP
-};
-
 template <typename T>
 inline T const & maximum(T const & a, T const & b) {
     return a < b ? b : a;
 }
 
 namespace Zooce {
+
+    typedef struct PersonalInfo {
+        int age;
+        std::string name;
+    } PersonalInfo;
+
+    enum class EmployeeType {
+        HOURLY, SALARY, TEMP
+    };
+
     class Employee {
     public:
-        Employee(unsigned int a_id, PersonalInfo a_pInfo, EmployeeType a_type);
+        Employee(unsigned int aId, PersonalInfo aPInfo, EmployeeType aType);
         ~Employee();
 
         // CLASS VARIABLES
-        static int s_idNums = 0;
+        static int sIdNums = 0;
 
         // GETTERS
-        inline int age() { return m_info->age; }
-        inline std::string name() { return m_info->name; }
-        inline unsigned int id() { return m_id; }
-        EmployeeType type() { return m_eType; }
+        inline int age() { return mInfo->age; }
+        inline std::string name() { return mInfo->name; }
+        inline unsigned int id() { return mId; }
+        EmployeeType type() { return mEType; }
 
         void print();
 
     private:
-        PersonalInfo * m_info;
-        EmployeeType m_eType;
-        unsigned int m_id;
+        PersonalInfo * mInfo;
+        EmployeeType mEType;
+        unsigned int mId;
     };
 
-    Employee::Employee(unsigned int a_id, PersonalInfo a_pInfo, EmployeeType a_type) {
-        m_id = Employee::s_idNums++;
-        m_info = new PersonalInfo;
-        m_info->age = a_pInfo.age;
-        m_info->name = a_pInfo.name;
-        m_eType = a_type;
+    // Implementation
+
+    Employee::Employee(unsigned int aId, PersonalInfo aPInfo, EmployeeType aType) {
+        mId = Employee::sIdNums++;
+        mInfo = new PersonalInfo;
+        mInfo->age = aPInfo.age;
+        mInfo->name = aPInfo.name;
+        mEType = aType;
     }
 
     Employee::~Employee() {
-        delete m_info;
-        m_info = NULL;
+        delete mInfo;
+        mInfo = NULL;
     }
 
     void Employee::print() {
-        std::cout << "Name: " << m_info->name << std::endl;
-        std::cout << "Age: " << m_info->age << std::endl;
-        switch (m_eType) {
+        std::cout << "Name: " << mInfo->name << std::endl;
+        std::cout << "Age: " << mInfo->age << std::endl;
+        switch (mEType) {
             case EmployeeType::HOURLY:
                 std::cout << "Type: Hourly" << std::endl; break;
             case EmployeeType::SALARY:
@@ -69,16 +72,16 @@ namespace Zooce {
             case EmployeeType::TEMP:
                 std::cout << "Type: Temp" << std::endl; break;
         }
-        std::cout << "Id: " << m_id << std::endl;
+        std::cout << "Id: " << mId << std::endl;
     }
 }
 
 int main(int argc, char const *argv[]) {
 
     int age(32);
-    std::string name = "Dave";
+    std::string name = "Zooce";
     PersonalInfo info = { age, name };
-    Employee * newEmployee = new Employee(123, info, EmployeeType::HOURLY);
+    Employee* newEmployee = new Employee(123, info, EmployeeType::HOURLY);
     newEmployee->print();
     delete newEmployee;
 
