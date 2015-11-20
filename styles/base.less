@@ -1,11 +1,11 @@
 @import "syntax-variables";
 
-:host, .atom-text-editor {
+atom-text-editor, :host {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
 }
 
-:host, .atom-text-editor {
+atom-text-editor, :host {
     background-color: @syntax-background-color;
     color: @syntax-text-color;
 
@@ -48,8 +48,8 @@
     }
 
     .cursor {
-        color: @syntax-cursor-color;
-        border-left: 2px solid;
+      border-left: 2px solid green;
+      background: rgba(243,173,13,0.63);
     }
 
     .selection .region {
@@ -57,12 +57,12 @@
     }
 }
 
-.atom-text-editor .search-results .marker .region {
+atom-text-editor .search-results .marker .region {
     background-color: transparent;
     border: 2px solid @syntax-result-marker-color;
 }
 
-.atom-text-editor .search-results .marker.current-result .region {
+atom-text-editor .search-results .marker.current-result .region {
     border: 2px solid @syntax-result-marker-color-selected;
 }
 
@@ -320,6 +320,6 @@
     }
 }
 
-.atom-text-editor[mini] .scroll-view {
+atom-text-editor[mini] .scroll-view {
     padding-left: 1px;
 }

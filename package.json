@@ -1,5 +1,5 @@
 {
-  "name": "zooce-syntax",
+  "name": "zooce-lefnord",
   "theme": "syntax",
   "version": "0.1.4",
   "description": "A simple, dark syntax theme with nice contrast for easy viewing!",
@@ -9,7 +9,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/Zooce/zooce-syntax",
+  "repository": "https://github.com/LeFnord/zooce-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
