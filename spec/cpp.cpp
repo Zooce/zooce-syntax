@@ -46,6 +46,14 @@ namespace Zooce {
         unsigned int mId;
     };
 
+    class Boss : public Employee {
+    public:
+        Boss();
+        ~Boss();
+
+        bool awesome() const;
+    };
+
     // Implementation
 
     Employee::Employee(unsigned int aId, PersonalInfo aPInfo, EmployeeType aType) {
