@@ -6,7 +6,13 @@
 #import <string>
 #import "MyObject.hpp"
 
+/**
+    These are our macros!!!
+    They are so freaking cool dude :)
+*/
 #define COMPARE(x,y) (((x) > (y)) ? 1 : ((x) == (y)) ? 0 : -1)
+#define CHECK(string) \
+    std::cout << string;
 
 template <typename T>
 inline T const & maximum(T const & a, T const & b) {
@@ -50,6 +56,8 @@ namespace Zooce {
     public:
         Boss();
         ~Boss();
+
+        void print(const std::string& msg) const;
 
         bool awesome() const;
     };
