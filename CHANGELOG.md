@@ -1,3 +1,7 @@
+## 1.0.1
+* Removed comment background color (didn't work like it does in Sublime Text).
+* Increased brightness of indent guide.
+
 ## 1.0.0
 * Removed Shadow DOM elements.
 
