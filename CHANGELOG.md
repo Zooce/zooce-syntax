@@ -1,3 +1,6 @@
+## 1.0.2
+* Fixed Cpp comment colors (credit to @tribayf)
+
 ## 1.0.1
 * Removed comment background color (didn't work like it does in Sublime Text).
 * Increased brightness of indent guide.
